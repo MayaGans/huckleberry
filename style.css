@@ -35,6 +35,9 @@ strong {
 
 .intro-chunk {
   padding: 3% 5%;
+  width: 80%;
+  padding-left: 20px;
+  margin: 0 auto;
 }
 
 section {
@@ -79,8 +82,8 @@ section {
 @media only screen and (max-width: 1024px) {
   
   .intro-chunk {
-    padding: 3% 5%;
-    max-width: 100%;
+    padding: 20px;
+    min-width: 100%;
   }
   
   .card {
