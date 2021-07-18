@@ -1,9 +1,9 @@
 :root {
-  --green: #009867;
-  --yellow:#FFBF00;
-  --dark-yellow: #CC9900;
-  --light-grey: #999999;;
-  --dark-grey: #666666;
+  --green: hsl(160deg, 100%, 30%);
+  --yellow:hsl(45deg, 100%, 50%);
+  --dark-yellow: hsl(45deg, 100%, 40%);
+  --light-grey: hsl(0deg, 0%, 60%);
+  --dark-grey: hsl(0deg, 0%, 30%);
 }
 
 * {
