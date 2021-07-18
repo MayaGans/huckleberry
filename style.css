@@ -1,11 +1,3 @@
-:root {
-  --green: hsl(160deg, 100%, 30%);
-  --yellow:hsl(45deg, 100%, 50%);
-  --dark-yellow: hsl(45deg, 100%, 40%);
-  --light-grey: hsl(0deg, 0%, 60%);
-  --dark-grey: hsl(0deg, 0%, 30%);
-}
-
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -15,85 +7,74 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 /* Add styles here! */
-
-strong {
-  color: var(--green);
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
-.title {
-  margin-bottom: 32px;
+html {
+  font-size: 18px;
 }
 
 .max-width-wrapper {
-  max-width: 100%;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .intro-chunk {
-  padding: 3% 5%;
-  width: 80%;
-  padding-left: 20px;
-  margin: 0 auto;
+  padding: 96px 0 48px;
+  max-width: 400px;
 }
 
-section {
-  background-color: var(--light-grey);
-  border-top: 5px solid var(--dark-grey);
-  height: 100%;
+.intro-chunk p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
 }
 
 .card {
   background-color: white;
-  width: 80%;
-  margin: 32 auto;
-  padding: 1px 16px 8px 16px;
-  border-bottom: solid 5px var(--dark-grey);
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .indented-heading {
-  background-color: var(--yellow);
-  width: max-content;
+  background: hsl(45deg, 100%, 50%);
+  margin-left: -32px;
+  margin-top: -16px;
   padding: 16px 32px;
-  border-bottom: solid 5px var(--dark-yellow);
-  margin-left: -40px;
+  width: fit-content;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
 }
 
-@media only screen and (max-width: 1024px) {
-
-  .intro-chunk {
-    padding: 128px;
-    max-width: 50%;
-  }
-
-  .card {
-   width: 100%;
-  }
-
-  .indented-heading {
-    margin-left: -20px;
-    padding: 16px 32px;
-  }
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
-@media only screen and (max-width: 1024px) {
-  
-  .intro-chunk {
-    padding: 16px;
-    min-width: 100%;
-  }
-  
-  .card {
-   width: 100%;
-  }
-
-  .indented-heading {
-    margin-left: -16px;
-    padding: 16px;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+.card p:last-child {
+  margin-bottom: 0;
 }
