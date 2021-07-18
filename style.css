@@ -1,3 +1,11 @@
+:root {
+  --green: #009867;
+  --yellow:#FFBF00;
+  --dark-yellow: #CC9900;
+  --light-grey: #999999;;
+  --dark-grey: #666666;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +15,83 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+strong {
+  color: var(--green);
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.max-width-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding: 3% 5%;
+}
+
+section {
+  background-color: var(--light-grey);
+  border-top: 5px solid var(--dark-grey);
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  width: 80%;
+  margin: 40 auto;
+  padding: 1px 20px 10px 20px;
+  border-bottom: solid 5px var(--dark-grey);
+}
+
+.indented-heading {
+  background-color: var(--yellow);
+  width: max-content;
+  padding: 20px 40px;
+  border-bottom: solid 5px var(--dark-yellow);
+  margin-left: -40px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .intro-chunk {
+    padding: 150px;
+    max-width: 50%;
+  }
+
+  .card {
+   width: 100%;
+  }
+
+  .indented-heading {
+    margin-left: -20px;
+    padding: 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  .intro-chunk {
+    padding: 3% 5%;
+    max-width: 100%;
+  }
+  
+  .card {
+   width: 100%;
+  }
+
+  .indented-heading {
+    margin-left: -20px;
+    padding: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
